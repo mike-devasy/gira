@@ -1,9 +1,11 @@
-import path from 'path';
-import { optimize } from 'svgo';
+/** @format */
+
+import path from "path"
+import { optimize } from "svgo"
 const projectName = path.basename(path.resolve()).toLowerCase()
 
-const isProduction = process.env.NODE_ENV === 'production'
-const isWp = process.argv.includes('--wp')
+const isProduction = process.env.NODE_ENV === "production"
+const isWp = process.argv.includes("--wp")
 
 export default {
   lang: "ua", // Наразі тільки Українська
@@ -20,7 +22,7 @@ export default {
     usetemplate: "main",
   },
   git: {
-    repo: `https://mike-devasy.github.io/gira/`,
+    repo: `https://github.com/mike-devasy/gira.git/`,
     branch: `main`,
   },
   navpanel: {

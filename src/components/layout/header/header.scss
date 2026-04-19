@@ -14,7 +14,8 @@ opacity: 0;
 			
 	}
 	@media (max-width:toEm($mobile)){
-		 @include adaptiveValue("padding-top", 47, 16); 
+		//  @include adaptiveValue("padding-top", 47, 16);
+
 		  
 	}
 	@media (max-width:toEm($mobileSmall)){
@@ -22,10 +23,12 @@ opacity: 0;
 	}
 	&__container {
 		@media (max-width: toEm($mobile)) {
-			max-width: 690px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			padding-top: 20px;
+					 @include adaptiveValue("padding-right", 30, 15, 0, 767, 480); 
+					 @include adaptiveValue("padding-left", 30, 15, 0, 767, 480); 
 		}
 	}
 	&__logo {
