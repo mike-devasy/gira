@@ -383,6 +383,7 @@ body {
   text-underline-offset: 0.125rem;
   font-weight: 500;
   white-space: nowrap;
+  transition: all 0.3s;
 }
 .form__content-support {
   display: none;
@@ -1436,6 +1437,12 @@ body {
 @media (width > 135em){
   .hero__drum {
     width: 52.8125rem;
+  }
+}
+
+@media (any-hover: hover){
+  .form__content-login:hover {
+    color: var(--secondary);
   }
 }
 
