@@ -378,8 +378,10 @@ body {
   color: var(--button-color);
   font-size: 0.875rem;
   line-height: 1.2;
+  font-family: var(-- "Zalando Sans Expanded", sans-serif);
   text-decoration: underline;
   text-underline-offset: 0.125rem;
+  font-weight: 500;
   white-space: nowrap;
 }
 .form__content-support {
