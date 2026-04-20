@@ -532,9 +532,17 @@ body {
 		color: var(--button-color);
 		font-size: 14px;
 		line-height: 1.2;
+		font-family: $secondFontFamily;
 		text-decoration: underline;
 		text-underline-offset: 2px;
+		font-weight: 500;
 		white-space: nowrap;
+		transition: all 0.3s;
+		@media (any-hover: hover){
+			&:hover{
+				color:var(--secondary);
+			}
+		}
 		@media (max-width: toEm(1150)) {
 			display: none;
 		}
