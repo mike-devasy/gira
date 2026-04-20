@@ -378,9 +378,12 @@ body {
   color: var(--button-color);
   font-size: 0.875rem;
   line-height: 1.2;
+  font-family: "Zalando Sans Expanded", sans-serif;
   text-decoration: underline;
   text-underline-offset: 0.125rem;
+  font-weight: 500;
   white-space: nowrap;
+  transition: all 0.3s;
 }
 .form__content-support {
   display: none;
@@ -1434,6 +1437,12 @@ body {
 @media (width > 135em){
   .hero__drum {
     width: 52.8125rem;
+  }
+}
+
+@media (any-hover: hover){
+  .form__content-login:hover {
+    color: var(--secondary);
   }
 }
 
